@@ -1,0 +1,233 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+span {
+  overflow: hidden;
+  display: inline-block;
+}
+
+[data-animation="head"] {
+  overflow-y: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body {
+  background: black;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: pointer;
+}
+
+body header {
+  background: #313132;
+  position: relative;
+}
+
+body header nav {
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: none;
+}
+
+body header nav li {
+  list-style-type: none;
+  color: white;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+body .hero img {
+  width: 100%;
+}
+
+body .hero_txt {
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.2rem;
+}
+
+body .hero_txt h1 {
+  color: white;
+  font-size: 5.8em;
+  line-height: 6rem;
+  font-weight: 600;
+}
+
+body .hero_txt p {
+  color: #86868b;
+  width: 66%;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+body .hero_txt .span {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+body .wrap_LikeMac {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  background-image: url(../assets/m2_laptop_hw__c84jsepabw2u_large_2x.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  width: 90%;
+  margin: 8rem auto;
+  text-align: center;
+  border-radius: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .wrap_LikeMac iframe {
+  width: 68%;
+  height: 37rem;
+  margin-top: 1.3rem;
+  overflow: hidden;
+}
+
+body .t_r_1 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.5rem;
+  width: 80%;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: 1rem;
+  text-align: center;
+  background: url(/assets/thrrr.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 10rem;
+}
+
+body .t_r_1 h1 {
+  color: white;
+  font-size: 4.8em;
+  line-height: 6rem;
+  font-weight: 600;
+}
+
+body .t_r_1_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0rem;
+}
+
+body .t_r_1_img .on3 {
+  color: #ad68ff;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#e1cdff), color-stop(40%, #ad68ff), to(#9d4dff));
+  background-image: linear-gradient(90deg, #e1cdff, #ad68ff 40%, #9d4dff);
+}
+
+body .t_r_1_img .on2 {
+  color: #60cafc;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ccefff), color-stop(40%, #60cafc), to(#3d71ff));
+  background-image: linear-gradient(90deg, #ccefff, #60cafc 40%, #3d71ff);
+}
+
+body .t_r_1_img > div {
+  width: 50%;
+}
+
+body .t_r_1_img > div img {
+  width: 60%;
+}
+
+body .t_r_1 p {
+  color: #86868b;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 1.3em;
+  width: 70%;
+}
+
+body .t_r_2 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  width: 78%;
+  margin: 0 auto;
+  padding: 5 rem 0px;
+}
+
+body .t_r_2 h2 {
+  background-image: linear-gradient(45deg, #ccefff, #60cafc 50%, #2f65ff);
+  font-size: calc($value / 16)rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 56px;
+}
+
+body .t_r_2 p {
+  color: #86868b;
+  font-size: 24px;
+  line-height: 1.3em;
+  width: 70%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

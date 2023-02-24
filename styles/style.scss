@@ -1,0 +1,161 @@
+@import "./helpers/_mixins";
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+span{
+  overflow: hidden;
+  display: inline-block;
+}
+[data-animation="head"]{
+  overflow-y: hidden;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+body {
+  background: black;
+  perspective: 1px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: pointer;
+  header {
+    background: #313132;
+    position: relative;
+    nav {
+      width: 70%;
+      margin: 0 auto;
+      @include flex(space-between, center, none);
+      li {
+        list-style-type: none;
+        color: white;
+        font-size: 12px;
+        opacity: 0.8;
+      }
+    }
+  }
+  .hero {
+    img {
+      width: 100%;
+    }
+    &_txt {
+      text-align: center;
+      @include flex_col(2.2rem);
+      h1 {
+        color: white;
+        font-size: 5.8em;
+        line-height: 6rem;
+        font-weight: 600;
+      }
+      p {
+        color: #86868b;
+        width: 66%;
+        margin: 0 auto;
+        font-weight: 500;
+        font-size: 2rem;
+      }
+
+      .span {
+        font-size: 21px;
+        font-weight: 600;
+      }
+    }
+  }
+  .wrap_LikeMac {
+    @include flex_col(1rem);
+    background-image: url(../assets/m2_laptop_hw__c84jsepabw2u_large_2x.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    width: 90%;
+    margin: 8rem auto;
+    text-align: center;
+    border-radius: 2rem;
+    align-items: center;
+    iframe {
+      width: 68%;
+      height: 37rem;
+      margin-top: 1.3rem;
+      overflow: hidden;
+    }
+  }
+  .t_r_1 {
+    @include flex_col(2.5rem);
+    width: 80%;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: 1rem;
+    text-align: center;
+    background: url(/assets/thrrr.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 10rem;
+    h1 {
+      color: white;
+      font-size: 4.8em;
+      line-height: 6rem;
+      font-weight: 600;
+    }
+    &_img {
+      @include flex(center, center, 0rem);
+      .on3 {
+        color: #ad68ff;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(90deg, #e1cdff, #ad68ff 40%, #9d4dff);
+      }
+      .on2 {
+        color: #60cafc;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(90deg, #ccefff, #60cafc 40%, #3d71ff);
+      }
+
+      > div {
+        width: 50%;
+
+        img {
+          width: 60%;
+        }
+      }
+    }
+    p {
+      color: #86868b;
+      margin: 0 auto;
+      font-size: 24px;
+      line-height: 1.3em;
+      width: 70%;
+    }
+  }
+  .t_r_2 {
+    @include flex_col(2rem);
+    width: 78%;
+    margin: 0 auto;
+    padding: 5 rem 0px;
+    h2 {
+      background-image: linear-gradient(45deg, #ccefff, #60cafc 50%, #2f65ff);
+      font-size: toRem(90);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      font-size: 56px;
+    }
+    p {
+      color: #86868b;
+      font-size: 24px;
+      line-height: 1.3em;
+      width: 70%;
+    }
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
